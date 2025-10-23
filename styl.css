@@ -1,0 +1,126 @@
+:root {
+    --sky-morning: #ADD8E6; 
+    --sky-day: #87CEEB;     
+    --sky-sunset: #FFD700;  
+    --sky-night: #1E90FF;   
+    --cloud-white: #FFFFFF; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    width: 100%; 
+    background-color: var(--cloud-white); 
+    color: #333;
+}
+
+
+header, nav, .main-content, footer {
+    width: 95%; 
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+header {
+    background-color: var(--sky-night); 
+    color: var(--cloud-white);
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: var(--sky-sunset);
+    color: #555; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 15px;
+}
+
+nav .logo h2 {
+    margin: 10px 0;
+}
+
+nav .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav .menu ul li a {
+    color: #555;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+}
+
+nav .menu ul li a:hover {
+    background-color: var(--sky-morning);
+    color: var(--sky-night);
+}
+
+
+.main-content {
+    background-color: var(--sky-day); 
+    display: grid; 
+    grid-template-columns: 2fr 1fr; 
+    grid-gap: 25px; 
+    padding: 25px;
+}
+
+article {
+    background-color: var(--cloud-white);
+    padding: 25px;
+    border-radius: 5px;
+}
+aside {
+    background-color: var(--sky-morning); 
+    padding: 20px;
+    border-radius: 5px;
+    border-right: 3px solid var(--sky-night); 
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    display: block;
+    border-radius: 5px;
+}
+
+/* TABLE STYLE */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.menu-table th, .menu-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-table th {
+    background-color: var(--sky-night);
+    color: var(--cloud-white);
+}
+
+/* FOOTER STYLE (Langit Gelap) */
+footer {
+    background-color: var(--sky-night); /* Ketentuan 1: Background berbeda */
+    color: var(--sky-morning);
+    text-align: center;
+    padding: 20px;
+}
