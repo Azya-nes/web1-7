@@ -1,0 +1,15 @@
+CREATE DATABASE perpustakaan_db;
+USE perpustakaan_db;
+
+CREATE TABLE buku (
+    id_buku INT(11) PRIMARY KEY AUTO_INCREMENT,
+    judul VARCHAR(255) NOT NULL,
+    penulis VARCHAR(100) NOT NULL,
+    tahun_terbit YEAR(4),
+    penerbit VARCHAR(100)
+);
+
+INSERT INTO buku (judul, penulis, tahun_terbit, penerbit) VALUES
+('Dasar-Dasar Pemrograman Web dengan PHP', 'Rudi Hartono', 2023, 'Informatika Jaya'),
+('Algoritma dan Struktur Data Modern', 'Siti Aminah', 2022, 'Media Cerdas'),
+('Pengantar Jaringan Komputer', 'Bambang Irawan', 2021, 'Teknik Press');
